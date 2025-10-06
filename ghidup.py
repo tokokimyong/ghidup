@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
+
+
 st.set_page_config(page_title="Tes Gaya Hidup & Harapan Hidup", layout="centered")
 
 st.markdown("""
@@ -173,3 +176,33 @@ if st.button("📊 Lihat Hasil"):
 
         st.divider()
         st.markdown("💡 *Hasil ini hanya bersifat edukatif. kuis ini berbasis pada prinsip-prinsip ilmiah dari kesehatan masyarakat dan epidemiologi gaya hidup, yang memang berhubungan langsung dengan risiko penyakit kronis dan harapan hidup. Untuk pemeriksaan lebih akurat, konsultasikan dengan tenaga medis profesional.*")
+
+st.markdown("""
+    <style>
+        /* Perbesar semua teks */
+        html, body, [class*="css"] {
+            font-size: 20px !important;
+        }
+
+        /* Samakan ukuran pertanyaan dan jawaban */
+        .stRadio > div > label, .stSelectbox label, .stCheckbox > label, .stMarkdown {
+            font-size: 20px !important;
+        }
+
+        /* Pastikan teks pertanyaan tidak lebih kecil dari opsi */
+        .stRadio label div, .stSelectbox div, .stCheckbox div {
+            font-size: 15px !important;
+        }
+
+        /* Heading & judul */
+        h1, h2, h3 {
+            font-size: 1.5em !important;
+        }
+
+        /* Tambah jarak antar blok */
+        .block-container {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    </style>
+""", unsafe_allow_html=True)
